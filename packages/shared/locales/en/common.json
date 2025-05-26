@@ -1,0 +1,12 @@
+{
+  "login": "Login",
+  "usernamePlaceholder": "Enter your username",
+  "logout": "Logout",
+  "welcome": "Welcome",
+  "deposit": "Deposit",
+  "enterAmount": "Enter deposit amount",
+  "bonusShop": "Bonus Shop",
+  "noBonuses": "No available bonuses at the moment",
+  "goToDeposit": "Make a Deposit",
+  "currentBalance": "Current Balance"
+}

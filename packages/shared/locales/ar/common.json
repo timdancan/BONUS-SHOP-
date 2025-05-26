@@ -1,0 +1,12 @@
+{
+  "login": "تسجيل الدخول",
+  "usernamePlaceholder": "أدخل اسم المستخدم",
+  "logout": "تسجيل الخروج",
+  "welcome": "مرحبًا",
+  "deposit": "إيداع",
+  "enterAmount": "أدخل مبلغ الإيداع",
+  "bonusShop": "متجر المكافآت",
+  "noBonuses": "لا توجد مكافآت متاحة حالياً",
+  "goToDeposit": "قم بالإيداع",
+  "currentBalance": "الرصيد الحالي"
+}

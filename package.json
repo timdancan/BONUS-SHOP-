@@ -2,14 +2,20 @@
   "name": "yes",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev:all": "turbo dev --parallel",
+    "dev:cosmos": "turbo dev --filter=cosmoswin",
+    "dev:betfinal": "turbo dev --filter=betfinal",
+    "build:all": "turbo build",
+    "start:all": "turbo start --parallel",
+    "clean": "turbo prune && rm -rf node_modules",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "eslint-import-resolver-typescript": "^4.4.0",
     "prettier": "^3.5.3",
+    "sass": "^1.89.0",
     "turbo": "^2.5.3",
     "typescript": "5.8.2"
   },
@@ -20,5 +26,11 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "i18next": "^25.2.1",
+    "next-i18next": "^15.4.2",
+    "react-i18next": "^15.5.2",
+    "zustand": "^5.0.5"
+  }
 }
