@@ -1,10 +1,13 @@
 import { ReactNode } from 'react';
 import '@shared/styles/globals.scss';
+import DirectionProvider from "@shared/utilits/DirectionProvider";
 
 function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
-        <body>{children}</body>
+        <body>
+        <DirectionProvider>{children}</DirectionProvider>
+        </body>
         </html>
     );
 }
