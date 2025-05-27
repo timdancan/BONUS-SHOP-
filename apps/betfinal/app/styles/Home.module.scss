@@ -1,0 +1,47 @@
+.container {
+  background: #000; // черный фон
+  color: gold;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Times New Roman', serif; // классический шрифт
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    color: gold;
+    font-size: 2rem;
+  }
+
+  button {
+    background: gold;
+    color: #000;
+    border: none;
+    border-radius: 0; // строгие углы
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.loginContainer {
+  background: #111;
+  border-radius: 0;
+  padding: 1rem 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}

@@ -1,0 +1,32 @@
+.loginForm {
+  background: #2a004f;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 300px;
+  margin: auto;
+
+  input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    background: linear-gradient(45deg, #00ffff, #800080);
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
