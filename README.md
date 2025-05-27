@@ -1,84 +1,76 @@
-# Turborepo starter
+# Cosmoswin & Betfinal Bonus Shop Monorepo
 
-This Turborepo starter is maintained by the Turborepo core team.
+This monorepo contains two Next.js applications:
 
-## Using this example
+- **Cosmoswin**: A modern and playful look with purple and cyan colors, rounded corners, and a futuristic font.
+- **Betfinal**: A classic, minimal design with black and gold colors, sharp corners, and strong RTL support for Arabic.
 
-Run the following command:
+Both apps include:
 
-```sh
-npx create-turbo@latest
-```
+- ✅ **Login** by username
+- ✅ **Deposit** simulation
+- ✅ **Bonus Shop** with eligibility filtering
+- ✅ **i18n**: English and Arabic support
+- ✅ **KYC** logic differences (Cosmoswin requires KYC, Betfinal does not)
 
-## What's inside?
+---
 
-This Turborepo includes the following packages/apps:
+## 🚀 How to Install and Run the Apps
 
-### Apps and Packages
+1. **Install dependencies** in the root:
+   ```bash
+   pnpm install
+    ```
+2. **Start the dev server** (for all apps):
+   ```bash
+   pnpm dev
+   ```
+3. By default, the apps are available at:
+    - **Cosmoswin**: [http://localhost:3000](http://localhost:3000)
+    - **Betfinal**: [http://localhost:3001](http://localhost:3001)
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+---
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## 🌐 Switching Between English and Arabic
 
-### Utilities
+Each app has a language toggle button (usually in the header).  
+Click it to switch between **English (LTR)** and **Arabic (RTL)** layouts.  
+The interface and text will update instantly.
 
-This Turborepo has some additional tools already setup for you:
+---
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## 📝 How to Add New Bonuses or Users
 
-### Build
+The data for users and bonuses is stored in **mock data JSON files**:
 
-To build all apps and packages, run the following command:
+- **Bonuses**:  
+  `packages/shared/data/bonuses-mock-data.json`
 
-```
-cd my-turborepo
-pnpm build
-```
+- **Users**:  
+  `packages/shared/data/user-mock-data.json`
 
-### Develop
+To add a new bonus or user:
 
-To develop all apps and packages, run the following command:
+1. Open the corresponding JSON file.
+2. Add a new object with the required fields (check existing entries for structure).
+3. Save the file. The app will automatically load the new data on refresh!
 
-```
-cd my-turborepo
-pnpm dev
-```
+---
 
-### Remote Caching
+## 💰 How the Deposit Feature Works
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+1. After logging in, navigate to the **Deposit** page (or click the "Make a Deposit" button).
+2. Enter a deposit amount in the numeric field.
+3. Click **Deposit**:
+    - Your **deposit count** increases by 1.
+    - Your **current balance** updates by the entered amount.
+4. You’ll be redirected to the **Bonus Shop**, where your eligible bonuses will update dynamically based on your new deposit count and balance.
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+---
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+## ⚡️ Summary
 
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+- ✅ **Monorepo** with shared components and logic
+- ✅ **Distinct UIs** for each brand
+- ✅ **Localized (EN/AR)** with dynamic layout switching
+- ✅ **Fully functional deposit and bonus logic** based on mock data
