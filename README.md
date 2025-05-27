@@ -19,11 +19,11 @@ Both apps include:
 
 1. **Install dependencies** in the root:
    ```bash
-   pnpm install
+   npm install
     ```
 2. **Start the dev server** (for all apps):
    ```bash
-   pnpm dev
+   npm dev:all
    ```
 3. By default, the apps are available at:
     - **Cosmoswin**: [http://localhost:3000](http://localhost:3000)
