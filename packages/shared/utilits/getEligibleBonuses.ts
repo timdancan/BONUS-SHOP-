@@ -9,7 +9,6 @@ export function getEligibleBonuses(user: User, brand: string, currentDate: Date)
     const brandBonuses = bonuses.filter((bonus) => bonus.brand === brand);
 
     return brandBonuses.filter((bonus) => {
-        debugger
         if (
             bonus.depositCountMin !== undefined &&
             user.depositCount < bonus.depositCountMin
@@ -43,7 +42,7 @@ export function getEligibleBonuses(user: User, brand: string, currentDate: Date)
             }
         }
 
-        if (bonus.requiresKYC && !user.isKYCApproved) {
+        if (brand === 'cosmoswin' && bonus.requiresKYC && !user.isKYCApproved) {
             return false;
         }
 

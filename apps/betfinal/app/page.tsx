@@ -22,7 +22,7 @@ export default function HomePage() {
           </button>
         </header>
 
-          <LoginForm />
+          <LoginForm brand={'betfinal'}/>
       </div>
   );
 }

@@ -6,6 +6,7 @@ import { useUserStore } from '../stores/userStore';
 import { useTranslation } from 'react-i18next';
 import { useRouter } from 'next/navigation';
 import { getEligibleBonuses } from '../utilits/getEligibleBonuses';
+import cn from 'classnames';
 
 import styles from '../styles/BonusShop.module.scss';
 
@@ -35,7 +36,7 @@ export default function BonusShop({ brand }: { brand: 'cosmoswin' | 'betfinal' }
     };
 
     return (
-        <div className={styles.container}>
+        <div className={cn(styles.container, brand === 'cosmoswin' ? styles.cosmoswin : styles.betfinal)}>
             <header className={styles.header}>
                 <h1>{t('bonusShop')}</h1>
                 <button onClick={toggleLanguage}>

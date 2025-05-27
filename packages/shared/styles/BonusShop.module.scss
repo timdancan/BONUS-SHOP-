@@ -1,6 +1,4 @@
 .container {
-  background: #2a004f;
-  color: #fff;
   min-height: 100vh;
   padding: 2rem;
   display: flex;
@@ -8,81 +6,197 @@
   align-items: center;
 }
 
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
+.cosmoswin {
+  background: #2a004f;
+  color: #fff;
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
 
-  h1 {
-    color: cyan;
-    font-size: 1.8rem;
+    h1 {
+      color: cyan;
+      font-size: 1.8rem;
+    }
+
+    button {
+      background: cyan;
+      color: #2a004f;
+      border: none;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 
-  button {
-    background: cyan;
-    color: #2a004f;
-    border: none;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+  .welcome {
+    background: #4b0082;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
 
-    &:hover {
-      opacity: 0.8;
+    p {
+      margin: 0;
+    }
+
+    button {
+      margin-top: 1rem;
+      background: cyan;
+      border: none;
+      color: #2a004f;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .bonusList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .bonusCard {
+    background: #800080;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 0.5rem;
+      color: cyan;
+    }
+
+    p {
+      margin: 0;
     }
   }
 }
 
-.welcome {
-  background: #4b0082;
-  border-radius: 12px;
-  padding: 1rem 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
+.betfinal {
 
-  p {
-    margin: 0;
-  }
+    background: #000;
+    color: gold;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Times New Roman', serif;
 
-  button {
-    margin-top: 1rem;
-    background: cyan;
-    border: none;
-    color: #2a004f;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: 0.3s;
 
-    &:hover {
-      opacity: 0.8;
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    h1 {
+      color: gold;
+      font-size: 1.8rem;
+    }
+
+    button {
+      background: gold;
+      color: #000;
+      border: none;
+      border-radius: 0; // строгие углы
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
-}
 
-.bonusList {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  width: 100%;
-  max-width: 800px;
-}
+  .welcome {
+    background: #222;
+    border-radius: 0; // строгие углы
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
 
-.bonusCard {
-  background: #800080;
-  border-radius: 12px;
-  padding: 1rem;
-  text-align: center;
+    p {
+      margin: 0;
+    }
 
-  h3 {
-    margin-bottom: 0.5rem;
-    color: cyan;
+    button {
+      margin-top: 1rem;
+      background: gold;
+      border: none;
+      color: #000;
+      border-radius: 0;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 
-  p {
-    margin: 0;
+  .actions {
+    margin: 1rem 0;
+
+    button {
+      background: gold;
+      color: #000;
+      border: none;
+      border-radius: 0;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .bonusList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .bonusCard {
+    background: #111;
+    border-radius: 0;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid gold;
+
+    h3 {
+      margin-bottom: 0.5rem;
+      color: gold;
+    }
+
+    p {
+      margin: 0;
+    }
   }
 }

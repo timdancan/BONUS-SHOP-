@@ -1,6 +1,4 @@
 .loginForm {
-  background: #2a004f;
-  color: #fff;
   padding: 1.5rem;
   border-radius: 12px;
   display: flex;
@@ -8,6 +6,11 @@
   gap: 1rem;
   max-width: 300px;
   margin: auto;
+}
+
+.cosmoswin {
+  background: #2a004f;
+  color: #fff;
 
   input {
     padding: 0.5rem;
@@ -29,4 +32,45 @@
       opacity: 0.9;
     }
   }
+}
+
+.betfinal {
+
+    background: #111;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    color: gold;
+    width: 100%;
+    max-width: 400px;
+
+    h2 {
+      margin-bottom: 1rem;
+      color: gold;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid gold;
+      border-radius: 0;
+      background: #000;
+      color: gold;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      background: gold;
+      color: #000;
+      border: none;
+      border-radius: 0;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
 }

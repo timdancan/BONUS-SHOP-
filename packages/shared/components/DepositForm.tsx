@@ -6,8 +6,9 @@ import { useRouter } from 'next/navigation';
 
 import styles from '../styles/Deposit.module.scss';
 import '../utilits/i18n';
+import cn from "classnames";
 
-export default function DepositPage() {
+export default function DepositPage({ brand }: { brand: 'cosmoswin' | 'betfinal' }) {
     const { user, updateUser } = useUserStore();
     const { t, i18n } = useTranslation();
     const router = useRouter();
@@ -38,7 +39,7 @@ export default function DepositPage() {
     };
 
     return (
-        <div className={styles.container}>
+        <div className={cn(styles.container, brand === 'cosmoswin' ? styles.cosmoswin : styles.betfinal)}>
             <header className={styles.header}>
                 <h1>{t('deposit')}</h1>
                 <button onClick={toggleLanguage}>
