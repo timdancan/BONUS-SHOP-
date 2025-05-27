@@ -1,0 +1,19 @@
+@keyframes cosmicPulse {
+  0% { box-shadow: 0 0 5px $neon-cyan; }
+  50% { box-shadow: 0 0 20px $cosmos-purple; }
+  100% { box-shadow: 0 0 5px $neon-cyan; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.pulse {
+  animation: cosmicPulse 3s ease infinite;
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
